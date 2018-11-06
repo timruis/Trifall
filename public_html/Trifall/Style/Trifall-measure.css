@@ -1,0 +1,422 @@
+/*!
+ * Trifall measure Pro 0.0.1 by @trifall - https://trifall.net
+ * License - https://trifall.net/license (Future Commercial License)
+ */
+body{margin:0;}
+
+nav{
+    list-style-type: none;
+}
+nav.sticky{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+nav.absolute{
+    overflow: hidden;
+    position: absolute;
+}
+nav.wide{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+}
+nav.left li {
+    float: left;
+}
+nav.onscroll{
+    background-color: dodgerblue;
+    transition: 0.7s;
+}
+nav.right li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+nav .active {
+    background-color: #4CAF50;
+}
+
+nav .btn a{
+    text-decoration: none;
+}
+
+.Trifall-msr-no{
+    display: none;
+}
+.Trifall-msr-1-5{
+    Width: 20%;
+}
+.Trifall-msr-2-5{
+    Width: 40%;
+}
+.Trifall-msr-3-5{
+    Width: 60%;
+}
+.Trifall-msr-4-5{
+    Width: 80%;
+}
+.Trifall-msr-1-8{
+    Width: 12%;
+}
+.Trifall-msr-2-8{
+    Width: 25%;
+}
+.Trifall-msr-3-8{
+    Width: 37%;
+}
+.Trifall-msr-4-8{
+    Width: 50%;
+}
+.Trifall-msr-5-8{
+    Width: 62%;
+}
+.Trifall-msr-6-8{
+    Width: 75%;
+}
+.Trifall-msr-7-8{
+    Width: 87%;
+}
+.Trifall-msr-1-12{
+    Width: 8%;
+}
+.Trifall-msr-2-12{
+    Width: 17%;
+}
+.Trifall-msr-3-12{
+    Width: 25%;
+}
+.Trifall-msr-4-12{
+    Width: 33%;
+}
+.Trifall-msr-5-12{
+    Width: 42%;
+}
+.Trifall-msr-6-12{
+    Width: 50%;
+}
+.Trifall-msr-7-12 {
+    Width: 58%;
+}
+.Trifall-msr-8-12{
+     Width: 67%;
+ }
+.Trifall-msr-9-12{
+    Width: 75%;;
+}
+.Trifall-msr-10-12{
+    Width: 83;
+}
+.Trifall-msr-11-12{
+    Width: 92%;
+}
+
+@media screen and (min-width: 35.5em){
+    .Trifall-msr-sm-no{
+        display: none;
+    }
+    .Trifall-msr-sm-1-5{
+        Width: 20%;
+    }
+    .Trifall-msr-sm-2-5{
+        Width: 40%;
+    }
+    .Trifall-msr-sm-3-5{
+        Width: 60%;
+    }
+    .Trifall-msr-sm-4-5{
+        Width: 80%;
+    }
+    .Trifall-msr-sm-*{
+        Width: 100%;
+    }
+    .Trifall-msr-sm-1-8{
+        Width: 12%;
+    }
+    .Trifall-msr-sm-2-8{
+        Width: 25%;
+    }
+    .Trifall-msr-sm-3-8{
+        Width: 37%;
+    }
+    .Trifall-msr-sm-4-8{
+        Width: 50%;
+    }
+    .Trifall-msr-sm-5-8{
+        Width: 62%;
+    }
+    .Trifall-msr-sm-6-8{
+        Width: 75%;
+    }
+    .Trifall-msr-sm-7-8{
+        Width: 87%;
+    }
+    .Trifall-msr-sm-1-12{
+        Width: 8%;
+    }
+    .Trifall-msr-sm-2-12{
+        Width: 17%;
+    }
+    .Trifall-msr-sm-3-12{
+        Width: 25%;
+    }
+    .Trifall-msr-sm-4-12{
+        Width: 33%;
+    }
+    .Trifall-msr-sm-5-12{
+        Width: 42%;
+    }
+    .Trifall-msr-sm-6-12{
+        Width: 50%;
+    }
+    .Trifall-msr-sm-7-12 {
+        Width: 58%;
+    }
+    .Trifall-msr-sm-8-12{
+        Width: 67%;
+    }
+    .Trifall-msr-sm-9-12{
+        Width: 75%;;
+    }
+    .Trifall-msr-sm-10-12{
+        Width: 83;
+    }
+    .Trifall-msr-sm-11-12{
+        Width: 92%;
+    }
+}
+@media screen and (min-width: 48em){
+    .Trifall-msr-md-no{
+        display: none;
+    }
+    .Trifall-msr-md-1-5{
+        Width: 20%;
+    }
+    .Trifall-msr-md-2-5{
+        Width: 40%;
+    }
+    .Trifall-msr-md-3-5{
+        Width: 60%;
+    }
+    .Trifall-msr-md-4-5{
+        Width: 80%;
+    }
+    .Trifall-msr-md-*{
+        Width: 100%;
+    }
+    .Trifall-msr-md-1-8{
+        Width: 12%;
+    }
+    .Trifall-msr-md-2-8{
+        Width: 25%;
+    }
+    .Trifall-msr-md-3-8{
+        Width: 37%;
+    }
+    .Trifall-msr-md-4-8{
+        Width: 50%;
+    }
+    .Trifall-msr-md-5-8{
+        Width: 62%;
+    }
+    .Trifall-msr-md-6-8{
+        Width: 75%;
+    }
+    .Trifall-msr-md-7-8{
+        Width: 87%;
+    }
+    .Trifall-msr-md-1-12{
+        Width: 8%;
+    }
+    .Trifall-msr-md-2-12{
+        Width: 17%;
+    }
+    .Trifall-msr-md-3-12{
+        Width: 25%;
+    }
+    .Trifall-msr-md-4-12{
+        Width: 33%;
+    }
+    .Trifall-msr-md-5-12{
+        Width: 42%;
+    }
+    .Trifall-msr-md-6-12{
+        Width: 50%;
+    }
+    .Trifall-msr-md-7-12 {
+        Width: 58%;
+    }
+    .Trifall-msr-md-8-12{
+        Width: 67%;
+    }
+    .Trifall-msr-md-9-12{
+        Width: 75%;;
+    }
+    .Trifall-msr-md-10-12{
+        Width: 83;
+    }
+    .Trifall-msr-md-11-12{
+        Width: 92%;
+    }
+}
+@media screen and (min-width: 64em){
+    .Trifall-msr-lg-no{
+        display: none;
+    }
+    .Trifall-msr-lg-1-5{
+        Width: 20%;
+    }
+    .Trifall-msr-lg-2-5{
+        Width: 40%;
+    }
+    .Trifall-msr-lg-3-5{
+        Width: 60%;
+    }
+    .Trifall-msr-lg-4-5{
+        Width: 80%;
+    }
+    .Trifall-msr-lg-*{
+        Width: 100%;
+    }
+    .Trifall-msr-lg-1-8{
+        Width: 12%;
+    }
+    .Trifall-msr-lg-2-8{
+        Width: 25%;
+    }
+    .Trifall-msr-lg-3-8{
+        Width: 37%;
+    }
+    .Trifall-msr-lg-4-8{
+        Width: 50%;
+    }
+    .Trifall-msr-lg-5-8{
+        Width: 62%;
+    }
+    .Trifall-msr-lg-6-8{
+        Width: 75%;
+    }
+    .Trifall-msr-lg-7-8{
+        Width: 87%;
+    }
+    .Trifall-msr-lg-1-12{
+        Width: 8%;
+    }
+    .Trifall-msr-lg-2-12{
+        Width: 17%;
+    }
+    .Trifall-msr-lg-3-12{
+        Width: 25%;
+    }
+    .Trifall-msr-lg-4-12{
+        Width: 33%;
+    }
+    .Trifall-msr-lg-5-12{
+        Width: 42%;
+    }
+    .Trifall-msr-lg-6-12{
+        Width: 50%;
+    }
+    .Trifall-msr-lg-7-12 {
+        Width: 58%;
+    }
+    .Trifall-msr-lg-8-12{
+        Width: 67%;
+    }
+    .Trifall-msr-lg-9-12{
+        Width: 75%;;
+    }
+    .Trifall-msr-lg-10-12{
+        Width: 83;
+    }
+    .Trifall-msr-lg-11-12{
+        Width: 92%;
+    }
+}
+@media screen and (min-width: 80em){
+    .Trifall-msr-xl-no{
+        display: none;
+    }
+    .Trifall-msr-xl-1-5{
+        Width: 20%;
+    }
+    .Trifall-msr-xl-2-5{
+        Width: 40%;
+    }
+    .Trifall-msr-xl-3-5{
+        Width: 60%;
+    }
+    .Trifall-msr-xl-4-5{
+        Width: 80%;
+    }
+    .Trifall-msr-xl-*{
+        Width: 100%;
+    }
+    .Trifall-msr-xl-1-8{
+        Width: 12%;
+    }
+    .Trifall-msr-xl-2-8{
+        Width: 25%;
+    }
+    .Trifall-msr-xl-3-8{
+        Width: 37%;
+    }
+    .Trifall-msr-xl-4-8{
+        Width: 50%;
+    }
+    .Trifall-msr-xl-5-8{
+        Width: 62%;
+    }
+    .Trifall-msr-xl-6-8{
+        Width: 75%;
+    }
+    .Trifall-msr-xl-7-8{
+        Width: 87%;
+    }
+    .Trifall-msr-xl-1-12{
+        Width: 8%;
+    }
+    .Trifall-msr-xl-2-12{
+        Width: 17%;
+    }
+    .Trifall-msr-xl-3-12{
+        Width: 25%;
+    }
+    .Trifall-msr-xl-4-12{
+        Width: 33%;
+    }
+    .Trifall-msr-xl-5-12{
+        Width: 42%;
+    }
+    .Trifall-msr-xl-6-12{
+        Width: 50%;
+    }
+    .Trifall-msr-xl-7-12 {
+        Width: 58%;
+    }
+    .Trifall-msr-xl-8-12{
+        Width: 67%;
+    }
+    .Trifall-msr-xl-9-12{
+        Width: 75%;;
+    }
+    .Trifall-msr-xl-10-12{
+        Width: 83;
+    }
+    .Trifall-msr-xl-11-12{
+        Width: 92%;
+    }
+}
+
